@@ -7,43 +7,86 @@
     <title>Home</title>
 
     <style>
-        a{
+        a {
             text-decoration: solid;
+            font-weight: bolder;
+
         }
-        h3{
+
+        a:hover {
+            color: grey;
+        }
+
+        th:hover {
+            color: grey;
+        }
+
+        h3 {
             padding-left: 5px;
             padding-right: 5px;
-            background-color:cadetblue;
+            background-color: cadetblue;
         }
-        td{
+
+        td {
             padding-left: 5px;
             background-color: cadetblue;
             font-size: 18px;
         }
-        li{
-            text-align: justify; 
-            color:rgb(58, 56, 56); 
-            font-size: 18px;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h2 {
-            color:rgb(59, 33, 229);
-            font-size: 30px;
-            
-        }   
-    </style>
 
-  
+        li {
+            text-align: justify;
+            color: rgb(58, 56, 56);
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        li:hover {
+            color: grey;
+        }
+
+        h2 {
+            color: rgb(59, 33, 229);
+            font-size: 30px;
+            padding: 5px;
+
+        }
+
+        h2:hover {
+            color: grey;
+        }
+
+        dd:hover {
+            color: rgb(13, 12, 12);
+        }
+
+        dt:hover {
+            color: rgb(13, 12, 12);
+        }
+
+        p:hover {
+            color: rgb(13, 12, 12);
+        }
+
+        div:hover {
+            color: rgb(205, 9, 9);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body style="background-color: rgb(181, 228, 228);">
 
     <center>
-        <table  style="background-color:cadetblue; padding-left: 100px;">
+        <table style="background-color:cadetblue; padding-left: 100px;">
             <tr>
-                <th ><img src="./artscollegelogo.png" height="100px" width="100px" alt="Logo of College"></th>
+                <th><img src="./artscollegelogo.png" height="100px" width="100px" alt="Logo of College"></th>
                 <th width="1500px">
-                    <h1 style="font-size: 40px;color:rgb(12, 86, 131)">ABC Arts and Science College</h1>
+                    <h1 style="font-size: 40px;color:rgb(8, 64, 99)">ABC Arts and Science College</h1>
                 </th>
             </tr>
         </table>
@@ -53,24 +96,48 @@
 
     <table border="0">
         <tr>
-            <th><a href="./home.html">
-                    <h3 >Home</h3>
+            <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./home.html">
+                    <h3>Home</h3>
                 </a></th>
-            <th><a href="./login.html">
-                    <h3 >Login</h3>
+            <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./login.html">
+                    <h3>Login</h3>
                 </a></th>
-            <th><a href="./Registration.html">
-                    <h3 >Registration</h3>
+            <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./Registration.html">
+                    <h3>Registration</h3>
                 </a></th>
         </tr>
 
     </table>
-    
-    <h2>Welcome</h2>
-    <table>
-        <tr style="border: 0; background-color:cadetblue; padding: 20px;">
-            <th>
 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"  data-bs-interval="2000">
+            <img src="./pexels-pixabay-159740.jpg" height="650px" width="1500px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="2000">
+            <img src="./pexels-pixabay-159490.jpg" height="650px" width="1500px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="2000">
+            <img src="./pexels-davidmcbee-396304.jpg" height="650px" width="1500px" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <h2>Welcome</h2>
+
+       <div class="row">
+        <div class="col-sm-4 mb-1 mb-sm-0 ">
+          <div class="card border-info mb-3">
+            <img src="./collegeview1.jpeg" class="card-img-top" height="350px" width="400px" alt="...">
+            <div class="card-body">
                 <ul type="square">
                     <h2>
                         <li>ABC Arts and Science College, a distinguished institution, is known for its commitment
@@ -80,149 +147,144 @@
                             (BA) in subjects such
                             as English, History, and Economics, and Bachelor of Science (BSc) in fields like Physics,
                             Chemistry, and Mathematics.
-
+    
                         </li><br>
-                        <li >
+                        <li>
                             There are also postgraduate courses available, including Master of Arts (MA) and Master of
                             Science (MSc) in various
                             disciplines, catering to advanced studies and research interests.
                         </li><br>
-                        <li >
+                        <li>
                             In addition to traditional courses, the college might offer professional and vocational
                             programs designed to enhance
                             employability and practical skills.
-                        </li><br>
+                        </li>
                     </h2>
-                </ul>
+                </ul> 
+            </div>
+          </div>
+        </div>
 
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="./collegeview2.jpeg" class="card-img-top" height="350px" width="400px" alt="...">
 
-
-            </th>
-            <th style="border: 0;"><img src="./collegeview1.jpeg" height="350px" width="700px" alt=""></th>
-        </tr>
-        <tr style="border: 0; background-color: cadetblue; padding: 20px;">
-            <th><img src="./collegeview2.jpeg" height="400px" width="700px" alt=""></th>
-            <th>
+            <div class="card-body">
                 <ul type="square">
                     <h2>
-                        <li >
+                        <li>
                             The college prides itself on having a team of highly qualified and experienced faculty
                             members
                             who are experts in their respective fields.
                         </li><br>
-                        <li >
+                        <li>
                             Regular guest lectures from industry experts and workshops are conducted to provide
                             students with real-world insights and hands-on experience.
                         </li><br>
-                        <li >
+                        <li>
                             A well-stocked library with a vast collection of books, journals, and digital resources.
                         </li><br>
-                        <li >
+                        <li>
                             State-of-the-art laboratories for science courses, equipped with modern instruments and
                             technology.
                         </li><br>
-                        <li >
+                        <li>
                             Advanced computer labs with high-speed internet and the latest software to support IT and
                             computer science students.
                         </li><br>
                     </h2>
-
                 </ul>
-            </th>
-        </tr>
-        <tr style="border: 0; background-color: cadetblue; padding: 20px;">
-            <th>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-sm-4">
+            <div class="card">
+              <img src="./collegeview3.jpeg" height="350px" width="490px" alt="">
+              <div class="card-body">
                 <ul type="square">
                     <h2>
-                        <li >
+                        <li>
                             A variety of clubs and societies for students to join, ranging from literary and cultural to
                             sports and technology.
                         </li><br>
-                        <li >
+                        <li>
                             Extensive sports facilities including a gymnasium, playgrounds, and courts for various
                             sports like cricket,
                             football, basketball, and more.
                         </li><br>
-                        <li >
+                        <li>
                             Annual cultural festivals and events that encourage student participation and showcase their
                             talents.
                         </li><br>
-                        <li >
+                        <li>
                             Professional counseling services to support students' mental health and well-being.
                         </li><br>
-                        <li >
+                        <li>
                             A dedicated career services cell that provides career guidance, internship opportunities,
                             and placement assistance.
                         </li><br>
                     </h2>
                 </ul>
-
-
-
-            </th>
-            <th><img src="./collegeview3.jpeg" height="400px" width="700px" alt=""></th>
-        </tr>
-    </table>
+              </div>
+            </div>
+          </div>
+      </div>
+    
 
     <h2>Principal's Message</h2>
 
-    
-        <dl style="color:rgb(96, 94, 94); font-size: 18px; text-align: justify; font-weight:bolder; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: rgb(218, 242, 235);">
-            <dt>Dear Students,</dt>
-            <dd>Welcome to ABC Arts and Science College, where we are dedicated to nurturing your academic potential and personal growth. As you embark on this exciting journey of learning and discovery, I encourage you to take full advantage of the opportunities available here. Our college is committed to providing a supportive and stimulating environment that fosters intellectual curiosity, critical thinking, and creative expression.
 
-                Our distinguished faculty, state-of-the-art facilities, and diverse academic programs are designed to equip you with the knowledge and skills needed to excel in your chosen fields. We believe in holistic education, and thus, we also emphasize the importance of extracurricular activities, community engagement, and personal development. 
-                
-                Remember, your time here is not just about acquiring a degree but also about shaping your character, building lasting relationships, and preparing for a future where you can make meaningful contributions to society. Embrace challenges, seek out new experiences, and strive for excellence in all your endeavors.
-                
-                I wish you all a fulfilling and enriching experience at ABC Arts and Science College. Let us work together to make your academic journey successful and memorable.
-                <p style="text-align: right; color:rgb(96, 94, 94); font-size: 18px; font-weight:bolder; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: rgb(218, 242, 235);">
-                    <br>Warm regards,
-            
-                    <br>[Name]
-                    <br>Principal
-                    <br>ABC Arts and Science College
-                </p>
-            </dd>
-        </dl>
+    <dl
+        style="color:rgb(96, 94, 94); font-size: 18px; text-align: justify; font-weight:bolder; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: rgb(218, 242, 235);">
+        <dt>Dear Students,</dt>
+        <dd>Welcome to ABC Arts and Science College, where we are dedicated to nurturing your academic potential and
+            personal growth. As you embark on this exciting journey of learning and discovery, I encourage you to take
+            full advantage of the opportunities available here. Our college is committed to providing a supportive and
+            stimulating environment that fosters intellectual curiosity, critical thinking, and creative expression.
+
+            Our distinguished faculty, state-of-the-art facilities, and diverse academic programs are designed to equip
+            you with the knowledge and skills needed to excel in your chosen fields. We believe in holistic education,
+            and thus, we also emphasize the importance of extracurricular activities, community engagement, and personal
+            development.
+
+            Remember, your time here is not just about acquiring a degree but also about shaping your character,
+            building lasting relationships, and preparing for a future where you can make meaningful contributions to
+            society. Embrace challenges, seek out new experiences, and strive for excellence in all your endeavors.
+
+            I wish you all a fulfilling and enriching experience at ABC Arts and Science College. Let us work together
+            to make your academic journey successful and memorable.
+            <p
+                style="text-align: right; color:rgb(96, 94, 94); font-size: 18px; font-weight:bolder; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+                <br>Warm regards,
+                <br>[Name]
+                <br>Principal
+                <br>ABC Arts and Science College
+            </p>
+        </dd>
+    </dl>
 
 
-    
-        
+
+
 
     <h2>Departments</h2>
-    <table border="1">
-        <tr height="30px">
-            <td width="500px">
-                <center><a href="./BAE.html">BA English</a></center>
-            </td>
-            <td width="500px">
-                <center><a href="./BAH.html">BA History</a></center>
-            </td>
-            <td width="500px">
-                <center><a href="./BAEc.html">BA Economics</a></center>
-            </td>
-        </tr>
-        <tr height="30px">
-            <td>
-                <center><a href="./BScP.html">BSc Physics</a></center>
-            </td>
-            <td>
-                <center><a href="./BScC.html">BSc Chemistry</a></center>
-            </td>
-            <td>
-                <center><a href="./BScM.html">BSc Mathemtaics</a></center>
-            </td>
-        </tr>
-        <tr height="30px">
-            <td>
-                <center><a href="./BCA.html">BCA</a></center>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table><br>
+<br>
+    <div class="container text-center">
+        <div class="row row-cols-7">
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BAE.html">BA English</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BAH.html">BA History</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BAEc.html">BA Economics</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BScP.html">BSc Physics</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BScC.html">BSc Chemistry</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BScM.html">BSc Mathematics</a></div>
+          <div class="col p-2 shadow-lg bg-white bg-opacity-0 border border-info rounded-pill"><a class="link-info-emphasis link-offset-2 link-underline link-underline-opacity-0" href="./BCA.html">BCA</a></div>
+        </div>
+    </div>
+    
+      <br><br>
+
+
 </body>
 <footer style="background-color: cadetblue; padding:10px; color:rgb(55, 57, 74); font-weight:bolder">
     <div>
@@ -233,8 +295,8 @@
         Administrative Asistatnt : 0487 - 233 0311 <br>
         College Office : 0487 - 233 4144 <br>
     </div>
-    <div> 
-       <br> Copyright © 2014 ABC. All rights reserved.
+    <div>
+        <br> Copyright © 2014 ABC. All rights reserved.
     </div>
 </footer>
 
