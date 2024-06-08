@@ -1,261 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Products</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <style>
         .card-deck .card {
             margin-bottom: 30px;
         }
-        .card img {
+
+        img {
             height: 200px;
-            width:200px;
+            width: 50%;
             object-fit: scale-down;
-            margin-left: 25%;
+            margin-left: 2%;
+            margin-top: 5%;
         }
+
         .card-footer .btn {
             margin: 5px;
         }
-        h1:hover{
+
+        h1:hover {
             color: grey;
         }
-        p:hover{
+
+        p:hover {
             color: rgb(13, 12, 12);
         }
-        a:hover{
+
+        a:hover {
             color: rgb(45, 43, 43);
         }
+
         a {
-          text-decoration: solid;
-          padding-left: 5px;
-          padding-right: 5px;
-          background-color:cadetblue; color: rgb(12, 86, 131); 
-          font-weight: 600;
+            text-decoration: solid;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: rgb(12, 86, 131);
+            font-weight: 600;
+        }
+
+        .carousel-item img {
+            height: 350px;
+            width: 900px;
+        }
+
+        .footer {
+            background-color: #408253;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: rgb(13, 12, 12);
+        }
+
+        p:hover {
+            color: rgb(13, 12, 12);
+        }
+
+        li:hover {
+            color: rgb(13, 12, 12);
+        }
+        del{
+            color: rgb(117, 108, 108);
+            font-weight: bold;
+            padding-left: 10px;
         }
     </style>
 </head>
+
 <body style="background-color: rgb(55, 199, 122);"">
-    <a href="./home.html" style="font-size: 25px">Home</a>
+    <a href=" ./home.html" style="font-size: 25px">Home</a>
     <a href="./login.html" style="font-size: 25px">Login</a>
-    <a href="./registration.html" style="font-size: 25px">Signup</a>  
-    <h1 style="color: rgb(101, 114, 16); font-weight: bolder; padding-top:50px;" class="text-center mb-4">Pet Products</h1>
-    
-<div class="container mt-5">
-    <div class="card-deck">
-        <!-- Product 1 -->
-        <div class="card">
-            <img src="./food1.jpg" class="card-img-top" alt="Dog Toy">
-            <div class="card-body">
-                <h5 class="card-title">Dog Toy</h5>
-                <p class="card-text">Durable chew toy for dogs of all sizes.</p>
-                <p class="card-text"><strong>$12.99</strong></p>
+    <a href="./registration.html" style="font-size: 25px">Signup</a>
+    <h1 style="color: rgb(81, 138, 6); font-weight: bolder; padding-top:50px; padding-left: 50px"
+        class="text-left mb-4">Pet Products</h1>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner center">
+            <div class="carousel-item active center" data-bs-interval="4000">
+                <img src="./dog-carousal5.png" class="d-block w-100" alt="...">
             </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
+            <div class="carousel-item center" data-bs-interval="4000">
+                <img src="./dog-carousal6.jpg" class="d-block w-100" alt="...">
             </div>
-        </div>
-        <!-- Product 2 -->
-        <div class="card">
-            <img src="./food2.jpg" class="card-img-top" alt="Cat Food">
-            <div class="card-body">
-                <h5 class="card-title">Cat Food</h5>
-                <p class="card-text">Premium dry cat food for healthy and happy cats.</p>
-                <p class="card-text"><strong>$24.99</strong></p>
+            <div class="carousel-item center" data-bs-interval="4000">
+                <img src="./dog-carousal2.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
+            <div class="carousel-item center" data-bs-interval="4000">
+                <img src="./dog-carousal4.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <!-- Product 3 -->
-        <div class="card">
-            <img src="./food3.jpg" class="card-img-top" alt="Bird Cage">
-            <div class="card-body">
-                <h5 class="card-title">Bird Cage</h5>
-                <p class="card-text">Spacious and comfortable bird cage.</p>
-                <p class="card-text"><strong>$89.99</strong></p>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+    <div class="container mt-5">
+        <div class="card-deck">
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="./food1.jpg" class="card-img-top" alt="Dog Toy">
+                <div class="card-body">
+                    <h5 class="card-title">PEDIGREE Adult Food</h5>
+                    <p class="card-text">2.8 kg Dry Adult Dog Food</p>
+                    <p class="card-text">Contains Chicken And Rice </p>
+                    <p class="card-text">Shelf Life - 18 months</p>
+                    <p class="card-text"><strong> ₹695 </strong><del>₹725</del></p>
+                    <p class="card-text" style="color: red;">Hurry, Only 1 left!</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
             </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="./food2.jpg" class="card-img-top" alt="Cat Food">
+                <div class="card-body">
+                    <h5 class="card-title">HIMALAYA Dog Food</h5>
+                    <p class="card-text">3kg Dry dog food </p>
+                    <p class="card-text">Chicken and rice for new born dogs</p>
+                    <p class="card-text">Shelf Life - 12 months</p>
+                    <p class="card-text"><strong> ₹770</strong> <del>₹800</del></p>
+                    <p class="card-text" style="color: red;">Hurry, Only 2 left!</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="./food3.jpg" class="card-img-top" alt="Bird Cage">
+                <div class="card-body">
+                    <h5 class="card-title">Whiskas Kitten Food</h5>
+                    <p class="card-text">(2-12 months) Dry Cat Food</p>
+                    <p class="card-text">Ocean Fish, nutrient rich, Minerals</p>
+                    <p class="card-text">No artificial preservatives</p>
+                    <p class="card-text"><strong> ₹451</strong> <del>₹475</del></p>
+                    <p class="card-text" style="color: red;">Get 10% off on first order</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="./food4.jpg" class="card-img-top" alt="Fish Tank">
+                <div class="card-body">
+                    <h5 class="card-title">Kaytee Wild Bird Food</h5>
+                    <p class="card-text">Applicable to all life stages</p>
+                    <p class="card-text">Grains, Sunflower seeds, Vitamin A,D </p>
+                    <p class="card-text">5 pounds/ 2365.88 ml</p>
+                    <p class="card-text"><strong> ₹4446</strong> <del>₹4885</del></p>
+                    <p class="card-text" style="color: red;">40% off for booking within 04:59:59</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="./birdcage1.jpg" class="card-img-top" alt="Hamster Wheel">
+                <div class="card-body">
+                    <h5 class="card-title">CC ENTERPRISES Bird Cage</h5>
+                    <p class="card-text">Best for Lovebird/Pet, Parrot</p>
+                    <p class="card-text"> High quality metal. Coated with spray powder paint</p>
+                    <p class="card-text"> Easy to Hang</p>
+                    <p class="card-text"><strong> ₹1289</strong><del>₹2999</del></p>
+                    <p class="card-text" style="color: red;">Get upto 60% off by ordering now</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="./birdcage2.jpg" class="card-img-top" alt="Rabbit Hutch">
+                <div class="card-body">
+                    <h5 class="card-title">Hanging Birdcage</h5>
+                    <p class="card-text">Large Space[Parrot, Myna], Portable Cage </p>
+                    <p class="card-text"> Easy to assemble,clean. Durable.</p>
+                    <p class="card-text"> Easy to clean up manure</p>
+                    <p class="card-text"><strong>₹3768</strong> <del>₹3999</del></p>
+                    <p class="card-text" style="color: red;">Hurry, Only 1 left!</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="./fishtank1.jpg" class="card-img-top" alt="Fish Tank">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Tank</h5>
+                    <p class="card-text">Stylish fish tank with LED lights.</p>
+                    <p class="card-text"><strong>$45.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="./fishtank2.jpg" class="card-img-top" alt="Hamster Wheel">
+                <div class="card-body">
+                    <h5 class="card-title">Hamster Wheel</h5>
+                    <p class="card-text">Quiet and safe hamster wheel.</p>
+                    <p class="card-text"><strong>$15.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="card">
+                <img src="./dogleashandcollar.jpg" class="card-img-top" alt="Rabbit Hutch">
+                <div class="card-body">
+                    <h5 class="card-title">Rabbit Hutch</h5>
+                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
+                    <p class="card-text"><strong>$120.00</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <!-- Product 10 -->
+            <div class="card">
+                <img src="./catlitterbox.jpg" class="card-img-top" alt="Fish Tank">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Tank</h5>
+                    <p class="card-text">Stylish fish tank with LED lights.</p>
+                    <p class="card-text"><strong>$45.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="card">
+                <img src="./dogchewstick.jpg" class="card-img-top" alt="Hamster Wheel">
+                <div class="card-body">
+                    <h5 class="card-title">Hamster Wheel</h5>
+                    <p class="card-text">Quiet and safe hamster wheel.</p>
+                    <p class="card-text"><strong>$15.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="card">
+                <img src="./petshampoo.jpg" class="card-img-top" alt="Rabbit Hutch">
+                <div class="card-body">
+                    <h5 class="card-title">Rabbit Hutch</h5>
+                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
+                    <p class="card-text"><strong>$120.00</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <!-- Product 13 -->
+            <div class="card">
+                <img src="./petshampoo1.jpg" class="card-img-top" alt="Fish Tank">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Tank</h5>
+                    <p class="card-text">Stylish fish tank with LED lights.</p>
+                    <p class="card-text"><strong>$45.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="card">
+                <img src="./petconditioner.jpg" class="card-img-top" alt="Hamster Wheel">
+                <div class="card-body">
+                    <h5 class="card-title">Hamster Wheel</h5>
+                    <p class="card-text">Quiet and safe hamster wheel.</p>
+                    <p class="card-text"><strong>$15.99</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="card">
+                <img src="./birdfeeder.jpg" class="card-img-top" alt="Rabbit Hutch">
+                <div class="card-body">
+                    <h5 class="card-title">Rabbit Hutch</h5>
+                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
+                    <p class="card-text"><strong>$120.00</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card-deck">
-        <!-- Product 4 -->
-        <div class="card">
-            <img src="./food4.jpg" class="card-img-top" alt="Fish Tank">
-            <div class="card-body">
-                <h5 class="card-title">Fish Tank</h5>
-                <p class="card-text">Stylish fish tank with LED lights.</p>
-                <p class="card-text"><strong>$45.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 5 -->
-        <div class="card">
-            <img src="./birdcage1.jpg" class="card-img-top" alt="Hamster Wheel">
-            <div class="card-body">
-                <h5 class="card-title">Hamster Wheel</h5>
-                <p class="card-text">Quiet and safe hamster wheel.</p>
-                <p class="card-text"><strong>$15.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 6 -->
-        <div class="card">
-            <img src="./birdcage2.jpg" class="card-img-top" alt="Rabbit Hutch">
-            <div class="card-body">
-                <h5 class="card-title">Rabbit Hutch</h5>
-                <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                <p class="card-text"><strong>$120.00</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-deck">
-        <!-- Product 7 -->
-        <div class="card">
-            <img src="./fishtank1.jpg" class="card-img-top" alt="Fish Tank">
-            <div class="card-body">
-                <h5 class="card-title">Fish Tank</h5>
-                <p class="card-text">Stylish fish tank with LED lights.</p>
-                <p class="card-text"><strong>$45.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 8 -->
-        <div class="card">
-            <img src="./fishtank2.jpg" class="card-img-top" alt="Hamster Wheel">
-            <div class="card-body">
-                <h5 class="card-title">Hamster Wheel</h5>
-                <p class="card-text">Quiet and safe hamster wheel.</p>
-                <p class="card-text"><strong>$15.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 9 -->
-        <div class="card">
-            <img src="./dogleashandcollar.jpg" class="card-img-top" alt="Rabbit Hutch">
-            <div class="card-body">
-                <h5 class="card-title">Rabbit Hutch</h5>
-                <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                <p class="card-text"><strong>$120.00</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-    <div class="card-deck">
-        <!-- Product 10 -->
-        <div class="card">
-            <img src="./catlitterbox.jpg" class="card-img-top" alt="Fish Tank">
-            <div class="card-body">
-                <h5 class="card-title">Fish Tank</h5>
-                <p class="card-text">Stylish fish tank with LED lights.</p>
-                <p class="card-text"><strong>$45.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 11 -->
-        <div class="card">
-            <img src="./dogchewstick.jpg" class="card-img-top" alt="Hamster Wheel">
-            <div class="card-body">
-                <h5 class="card-title">Hamster Wheel</h5>
-                <p class="card-text">Quiet and safe hamster wheel.</p>
-                <p class="card-text"><strong>$15.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 12 -->
-        <div class="card">
-            <img src="./petshampoo.jpg" class="card-img-top" alt="Rabbit Hutch">
-            <div class="card-body">
-                <h5 class="card-title">Rabbit Hutch</h5>
-                <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                <p class="card-text"><strong>$120.00</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-    <div class="card-deck">
-        <!-- Product 13 -->
-        <div class="card">
-            <img src="./petshampoo1.jpg" class="card-img-top" alt="Fish Tank">
-            <div class="card-body">
-                <h5 class="card-title">Fish Tank</h5>
-                <p class="card-text">Stylish fish tank with LED lights.</p>
-                <p class="card-text"><strong>$45.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 14 -->
-        <div class="card">
-            <img src="./petconditioner.jpg" class="card-img-top" alt="Hamster Wheel">
-            <div class="card-body">
-                <h5 class="card-title">Hamster Wheel</h5>
-                <p class="card-text">Quiet and safe hamster wheel.</p>
-                <p class="card-text"><strong>$15.99</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-        <!-- Product 12 -->
-        <div class="card">
-            <img src="./birdfeeder.jpg" class="card-img-top" alt="Rabbit Hutch">
-            <div class="card-body">
-                <h5 class="card-title">Rabbit Hutch</h5>
-                <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                <p class="card-text"><strong>$120.00</strong></p>
-            </div>
-            <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>bingo@petsworld.com</li>
+                    <li>+1 234 567 890</li>
+                    <li>123 Pet St, Animal City, AC 12345</li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./products1.html">Shop</a></li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=T" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=Y" alt="YouTube"></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mb-0">© 2024 Pet Products. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
