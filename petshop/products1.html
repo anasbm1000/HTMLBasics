@@ -16,7 +16,10 @@
         .card-deck .card {
             margin-bottom: 30px;
         }
-
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0.9, 0.9, 0.9, 0.9);
+            background-color: rgb(247, 247, 248);
+        }    
         img {
             height: 200px;
             width: 50%;
@@ -55,11 +58,9 @@
         }
 
         .footer {
-            background-color: #408253;
+            background-color: #555956;
             color: #ffffff;
             padding: 20px 0;
-            margin-left: 20px;
-            margin-right: 20px;
         }
 
         .footer a {
@@ -83,14 +84,30 @@
             font-weight: bold;
             padding-left: 10px;
         }
+        .bg-image {
+            background-image: url('./bg2.jpg');
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.7); /* White background with opacity */
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 525px;
+            margin: auto;
+        }
     </style>
 </head>
 
-<body style="background-color: rgb(55, 199, 122);"">
+<body style="background-color: rgb(55, 199, 122);">
+    <div class="bg-image"> 
+
     <a href=" ./home.html" style="font-size: 25px">Home</a>
     <a href="./login.html" style="font-size: 25px">Login</a>
     <a href="./registration.html" style="font-size: 25px">Signup</a>
-    <h1 style="color: rgb(81, 138, 6); font-weight: bolder; padding-top:50px; padding-left: 50px"
+    <h1 style="color: rgb(41, 42, 35); font-weight: bolder; padding-top:50px; padding-left: 50px"
         class="text-left mb-4">Pet Products</h1>
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -156,7 +173,7 @@
             <div class="card">
                 <img src="./food3.jpg" class="card-img-top" alt="Bird Cage">
                 <div class="card-body">
-                    <h5 class="card-title">Whiskas Kitten Food</h5>
+                    <h5 class="card-title">WHISKAS Kitten Food</h5>
                     <p class="card-text">(2-12 months) Dry Cat Food</p>
                     <p class="card-text">Ocean Fish, nutrient rich, Minerals</p>
                     <p class="card-text">No artificial preservatives</p>
@@ -175,7 +192,7 @@
             <div class="card">
                 <img src="./food4.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">Kaytee Wild Bird Food</h5>
+                    <h5 class="card-title">KAYTEE Wild Bird Food</h5>
                     <p class="card-text">Applicable to all life stages</p>
                     <p class="card-text">Grains, Sunflower seeds, Vitamin A,D </p>
                     <p class="card-text">5 pounds/ 2365.88 ml</p>
@@ -226,9 +243,12 @@
             <div class="card">
                 <img src="./fishtank1.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">Fish Tank</h5>
-                    <p class="card-text">Stylish fish tank with LED lights.</p>
-                    <p class="card-text"><strong>$45.99</strong></p>
+                    <h5 class="card-title">PONDON Fish Tank</h5>
+                    <p class="card-text">Black glass aquarium with a space of 1.7 Gallon.</p>
+                    <p class="card-text">Rectangular shape with filter</p>
+                    <p class="card-text">Provides quick and stylish foundation</p>
+                    <p class="card-text"><strong>₹11680</strong> <del>₹15999</del></p>
+                    <p class="card-text" style="color: red;">Hurry, last one is left!!</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -239,9 +259,12 @@
             <div class="card">
                 <img src="./fishtank2.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">Hamster Wheel</h5>
-                    <p class="card-text">Quiet and safe hamster wheel.</p>
-                    <p class="card-text"><strong>$15.99</strong></p>
+                    <h5 class="card-title">Bubble Fish Aquarium </h5>
+                    <p class="card-text">Deluxe Acrylic Wall Mounted</p>
+                    <p class="card-text">Includes a predrilled aquarium. <del>Pump, filtration</del></p>
+                    <p class="card-text">Can be hung virtually anywhere. </p>
+                    <p class="card-text"><strong> ₹3614</strong> <del>₹4577</del></p>
+                    <p class="card-text" style="color: red;">Get upto 20% off by ordering now</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -252,9 +275,12 @@
             <div class="card">
                 <img src="./dogleashandcollar.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">Rabbit Hutch</h5>
-                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                    <p class="card-text"><strong>$120.00</strong></p>
+                    <h5 class="card-title">SENAPATI Dog Collar & Leash</h5>
+                    <p class="card-text">Large, Green, Nylon Material</p>
+                    <p class="card-text">Reversible and Retractable</p>
+                    <p class="card-text">Standard Harness Type that can be used everyday</p>
+                    <p class="card-text"><strong> ₹124</strong> <del>₹349</del></p>
+                    <p class="card-text" style="color: red;">5 available!!</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -267,9 +293,12 @@
             <div class="card">
                 <img src="./catlitterbox.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">Fish Tank</h5>
-                    <p class="card-text">Stylish fish tank with LED lights.</p>
-                    <p class="card-text"><strong>$45.99</strong></p>
+                    <h5 class="card-title">MOVSON Litter Box</h5>
+                    <p class="card-text">Plastic material, round in shape</p>
+                    <p class="card-text">Available colors - Pink, White</p>
+                    <p class="card-text">Dimensions : 5.11 x 5.11 x 5.11</p>
+                    <p class="card-text"><strong>₹441</strong> <del>₹999</del></p>
+                    <p class="card-text" style="color: blue;">Be the first customer</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -280,9 +309,12 @@
             <div class="card">
                 <img src="./dogchewstick.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">Hamster Wheel</h5>
-                    <p class="card-text">Quiet and safe hamster wheel.</p>
-                    <p class="card-text"><strong>$15.99</strong></p>
+                    <h5 class="card-title">Dog Chew Stick</h5>
+                    <p class="card-text">450g Rawhide Munchy Sticks</p>
+                    <p class="card-text">Flavours - Chicken, Liver, Milk, Mint</p>
+                    <p class="card-text">Used For Healthy breathe, teeth & gums</p>
+                    <p class="card-text"><strong>₹152</strong> <del>₹399</del></p>
+                    <p class="card-text" style="color: red;">Get upto 20% off by ordering now</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -293,9 +325,12 @@
             <div class="card">
                 <img src="./petshampoo.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">Rabbit Hutch</h5>
-                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                    <p class="card-text"><strong>$120.00</strong></p>
+                    <h5 class="card-title">HIMALAYA Shampoo </h5>
+                    <p class="card-text">Ayurvedic proprietary medicine</p>
+                    <p class="card-text">For Dogs prevents from fleas, ticks, itching</p>
+                    <p class="card-text">Suitable for all dog breeds</p>
+                    <p class="card-text"><strong>₹495</strong> <del>₹550</del></p>
+                    <p class="card-text" style="color: red;">Get Pack of 2 at Rs. 500</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -308,9 +343,13 @@
             <div class="card">
                 <img src="./petshampoo1.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">Fish Tank</h5>
-                    <p class="card-text">Stylish fish tank with LED lights.</p>
-                    <p class="card-text"><strong>$45.99</strong></p>
+                    <h5 class="card-title">CAREDOM Shampoo and Conditioner</h5>
+                    <p class="card-text">Herbal Pet, Vita Pet, Mint Pet, Pro Pet 
+                        Dogs Shampoo</p>
+                    <p class="card-text">Packed with organic conditioners</p>
+                    <p class="card-text">Perfect for dogs with allergies & sensitivities.</p>
+                    <p class="card-text"><strong>₹889</strong> <del>₹900</del></p>
+                    <p class="card-text" style="color: red;">Get Pack of 2 at Rs. 1299</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -321,9 +360,12 @@
             <div class="card">
                 <img src="./petconditioner.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">Hamster Wheel</h5>
-                    <p class="card-text">Quiet and safe hamster wheel.</p>
-                    <p class="card-text"><strong>$15.99</strong></p>
+                    <h5 class="card-title">THE PET MOM Dog Shampoo</h5>
+                    <p class="card-text">Strengthen, Shine, Condition, Control Hair Fall</p>
+                    <p class="card-text">Keratin & Protein is curated to strengthen fur</p>
+                    <p class="card-text">Enriched with milk protein and soybean oil</p>
+                    <p class="card-text"><strong>₹499</strong> <del>₹1298</del></p>
+                    <p class="card-text" style="color: red;">Get Pack of 2 at Rs. 999</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -334,9 +376,12 @@
             <div class="card">
                 <img src="./birdfeeder.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">Rabbit Hutch</h5>
-                    <p class="card-text">Comfortable and spacious hutch for rabbits.</p>
-                    <p class="card-text"><strong>$120.00</strong></p>
+                    <h5 class="card-title">TRUSTBASKET Bird Feeder</h5>
+                    <p class="card-text">Heavy steel mesh with rust-resistant black powder</p>
+                    <p class="card-text">Dimensions	- 18L x 8.8W x 21.5H</p>
+                    <p class="card-text">Garden, Balcony, Home, Indoor and Outdoor (Black)</p>
+                    <p class="card-text"><strong>₹249</strong> <del>₹299</del></p>
+                    <p class="card-text" style="color: blue;">Be the first to know</p>
                 </div>
                 <div class="card-footer text-center">
                     <a href="#" class="btn btn-primary">Buy Now</a>
@@ -362,7 +407,8 @@
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="./home.html">Home</a></li>
-                    <li><a href="./products1.html">Shop</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./registration.html">Sign Up</a></li>
                 </ul>
             </div>
             <!-- <div class="col-md-4">

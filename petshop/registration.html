@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <style>
-        h1 {
-            color: rgb(10, 80, 151);
+        .content h1 {
+            
+            color: rgb(41, 42, 35); font-weight: bolder
+        }
+        .content h1:hover{
+            color: grey;
+        }
+        .content h2 {
+            color: rgb(78, 79, 70); font-weight: bolder        }
+        .content h2:hover{
+            color: grey;
+        }
+        .content p {
+            color: rgb(78, 79, 70); font-weight:300; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .content p:hover{
+            color: grey;
         }
         th {
             text-align: left;
-            color: rgb(5, 28, 51);
+            color: rgb(73, 75, 78);
             font-family:monospace;
-            font-size: 15px;
+            font-size: 17px;
             font-weight:900;
             padding-top:20px;
         }
@@ -25,9 +40,12 @@
             padding-right: 50px;
             padding-top:20px;
             padding-left:10px;
+            color: rgb(73, 75, 78);
+            font-weight:500;
         }
-        h1:hover{
-            color: grey;
+        
+        .content h2:hover{
+            color: black;
         }
         p:hover{
             color: rgb(13, 12, 12);
@@ -40,13 +58,12 @@
         }
         .registrationform{
             width:1000px; height:auto; padding:20px;
+            
         }
         .footer {
-            background-color: #408253;
+            background-color: #555956;
             color: #ffffff;
             padding: 20px 0;
-            margin-left: 20px;
-            margin-right: 20px;
         }
         .footer a {
             color: #ffffff;
@@ -54,6 +71,20 @@
         }
         .footer a:hover {
             color: rgb(13, 12, 12);
+        }
+        .bg-image {
+            background-image: url('./bg2.jpg');
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.6); /* White background with opacity */
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 525px;
+            margin: auto;
         }
         .card-deck .card {
             margin-bottom: 30px;
@@ -72,25 +103,30 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </head>
-<body style="background-color: rgb(55, 199, 122);"">
-    <a href="./home.html" style="font-size: 25px; 
+<body style="background-color: rgb(55, 199, 122);">
+    <div class="bg-image"> 
+        <a href="./home.html" style="font-size: 25px; 
     padding: 5px; text-decoration: none;">Home</a>
+        <div class="content">
+    
     <center>
-        <h1 style="color: rgb(101, 114, 16); font-weight: bolder">Bingo Pet Shop</h1>
+        <h1 >Bingo Pet Shop</h1>
 
         <img src="./logo.png" height="125px" width="100px" alt="ABC logo">
         
-        <h2 style="color: rgb(29, 124, 27); font-weight: bolder">
+        <h2>
             Customer Registration Form
         </h2>
 
-        <p style="color: rgb(35, 143, 33); font-weight:700; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif">
+        <p>
             New pet owners are hereby requested to fill this form for keeping the details official
         </p>
-        
 
+    </center>
+        </div>    
+    <center>    
     <div class="registrationform">
-        <form action="" method="post" style="background-color: rgb(58, 146, 58); text-align:left; padding: 20px">
+        <form action="" method="post" style="background-color: rgba(250, 246, 246, 0.7); text-align:left; padding: 20px; border-radius: 8px;">
             <table>
                 <tr>
                     <th>First Name</th>
@@ -177,14 +213,16 @@
             </table>
         </form>
     </div>
-</center>        
+    </center>
+</div>  
+     
 </body>
 
 <!-- <footer">
     Copyright © 2014 ABC. All rights reserved.
 </footer> -->
 
-<footer class="footer mt-5">
+<footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-11">

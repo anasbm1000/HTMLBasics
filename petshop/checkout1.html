@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Checkout</h2>
+                    <form>
+                        <!-- Billing Information -->
+                        <h4>Billing Information</h4>
+                        <div class="form-group">
+                            <label for="billingFirstName">First Name</label>
+                            <input type="text" class="form-control" id="billingFirstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="billingLastName">Last Name</label>
+                            <input type="text" class="form-control" id="billingLastName" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="billingEmail">Email</label>
+                            <input type="email" class="form-control" id="billingEmail" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="billingPhone">Phone Number</label>
+                            <input type="tel" class="form-control" id="billingPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="billingAddress">Address</label>
+                            <input type="text" class="form-control" id="billingAddress" placeholder="Enter your address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="billingCity">City</label>
+                                <input type="text" class="form-control" id="billingCity" placeholder="Enter your city" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="billingState">State</label>
+                                <input type="text" class="form-control" id="billingState" placeholder="Enter your state" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="billingZip">Zip Code</label>
+                                <input type="text" class="form-control" id="billingZip" placeholder="Enter your zip code" required>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Information -->
+                        <h4>Shipping Information</h4>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="sameAsBilling" checked>
+                            <label class="form-check-label" for="sameAsBilling">Same as billing information</label>
+                        </div>
+                        <div id="shippingInfo" class="d-none">
+                            <div class="form-group">
+                                <label for="shippingFirstName">First Name</label>
+                                <input type="text" class="form-control" id="shippingFirstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="shippingLastName">Last Name</label>
+                                <input type="text" class="form-control" id="shippingLastName" placeholder="Enter your last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="shippingAddress">Address</label>
+                                <input type="text" class="form-control" id="shippingAddress" placeholder="Enter your address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="shippingCity">City</label>
+                                    <input type="text" class="form-control" id="shippingCity" placeholder="Enter your city">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="shippingState">State</label>
+                                    <input type="text" class="form-control" id="shippingState" placeholder="Enter your state">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="shippingZip">Zip Code</label>
+                                    <input type="text" class="form-control" id="shippingZip" placeholder="Enter your zip code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Information -->
+                        <h4>Payment Information</h4>
+                        
+                        <!-- Card Payment Details -->
+                        <div id="cardPayment" class="payment-details">
+                            <div class="form-group">
+                                <label for="cardName">Name on Card</label>
+                                <input type="text" class="form-control" id="cardName" placeholder="Enter name on card">
+                            </div>
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="cardExpiry">Expiration Date</label>
+                                    <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cardCVV">CVV</label>
+                                    <input type="text" class="form-control" id="cardCVV" placeholder="Enter CVV">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UPI Payment Details -->
+                        <div id="upiPayment" class="payment-details">
+                            <div class="form-group">
+                                <label for="upiID">UPI ID</label>
+                                <input type="text" class="form-control" id="upiID" placeholder="Enter your UPI ID">
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
