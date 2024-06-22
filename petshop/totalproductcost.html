@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Layout</title>
+    <style>
+        td {
+            text-align: left;
+            margin-left: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input {
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        p {
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        table {
+            margin-top: 20px;
+            text-align: left;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        ::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        button {
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            font-size: 15px;
+            background-color: rgba(9, 163, 230, 0.2);
+            border-radius: 20px;
+        }
+        tbody {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        tbody td {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            padding: 10px;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+        .bg-image {
+            background-image: url('./images/bg2.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bill-container {
+            width: 700px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .bill-header {
+            border-bottom: 1px dashed black;
+            text-align: center;
+        }
+        .bill-footer {
+            border-top: 1px dashed black;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .bill-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .bill-details {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .bill-details th,
+        .bill-details td {
+            border: 1px dashed black;
+            padding: 10px;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+        .bill-summary {
+            margin-top: 20px;
+        }
+        option {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        a {
+            text-decoration: solid;
+            font-size: 15px;
+            color: rgb(12, 86, 131);
+            font-weight: 600;
+        }
+        th, h3 {
+            text-align: left;
+            color: rgb(5, 63, 121);
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        td {
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-left: 10px;
+            color: rgb(73, 75, 78);
+            font-weight: 500;
+        }
+        
+        .billing-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .billing-form input, .billing-form select, .billing-form button {
+            flex: 1 0 45%;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #555956;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        li:hover{
+            color: rgb(13, 12, 12);
+        }
+        .footer a:hover {
+            color: rgb(13, 12, 12);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<body class="bg-image">
+    <div style="margin-bottom: 20px; background: rgba(255, 255, 255, 0.9); display:inline-block">
+        <table border="0" style="margin-top: 0px;">
+            
+            <tr style="height: 1px">
+                <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./home.html">
+                        <h3>Home</h3>
+                    </a>
+                </th>
+                <th>
+                    <a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./login.html">
+                        <h3>Login</h3>
+                    </a>
+                </th>
+                <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./registration.html">
+                        <h3>Registration</h3>
+                    </a>
+                </th>
+                <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./products1.html">
+                    <h3 style="padding-right: 20px;">Products</h3>
+                    </a>
+                </th>    
+            </tr>
+    
+        </table>
+    </div>
+
+    <div class="bill-container">
+        <h1 style="font-family: 'Courier New', Courier, monospace; text-align: center;">Product Details</h1>
+        <div class="billing-form">
+            <select name="" id="nameOfProduct" onchange="generateAmount()" style="padding: 5px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                <option value="">Select Product</option>
+                <option value="695" name="PEDIGREE">PEDIGREE Adult Food</option>
+                <option value="770" name="HIMALAYA">HIMALAYA Dog Food</option>
+                <option value="451" name="WHISKAS">WHISKAS Kitten Food</option>
+                <option value="4446" name="KAYTEE">KAYTEE Wild Bird Food</option>
+                <option value="1289" name="CC">CC ENTERPRISES Bird Cage</option>
+                <option value="3768" name="HANGING">Hanging Birdcage</option>
+                <option value="11680" name="PONDON">PONDON Fish Tank</option>
+                <option value="3614" name="Bubble">Bubble Fish Aquarium</option>
+                <option value="124" name="SENAPATI">SENAPATI Dog Collar & Leash</option>
+                <option value="441" name="MOVSON">MOVSON Litter Box</option>
+                <option value="152" name="Chew">Dog Chew Stick</option>
+                <option value="495" name="HIM-SHAMPOO">HIMALAYA Shampoo</option>
+                <option value="889" name="CAREDOM">CAREDOM Shampoo and Conditioner</option>
+                <option value="499" name="THEPETMOM">THE PET MOM Dog Shampoo</option>
+                <option value="249" name="TRUSTBASKET">TRUSTBASKET Bird Feeder</option>
+            </select>
+            <input type="number" name="price" id="price" placeholder="Price" style="width:80px; font-weight:bold;" readonly>
+            <input type="number" name="quantity" id="quantity" placeholder="Quantity">
+            <input type="text" name="nameOfCustomer" id="nameOfCustomer" style="width: 300px" placeholder="Customer Name">
+            <input type="number" name="result" id="result" placeholder="Total Amount" style="display:none;" readonly>
+            <input type="text" name="billNo" id="billNo" style="width: 200px" placeholder="Bill No">
+            <input type="date" name="dateOfBill" id="dateOfBill" style="width: 100px">
+            <input type="time" name="timeOfBill" id="timeOfBill" style="width: 100px">
+            <button class="btn btn-primary btn-block btn-lg" type="button" onclick="generateAmount(), generateTotalAmount()">Proceed</button>
+        </div>
+
+        <div class="bill-header">
+            <h2 style="margin-top: 20px;">Bingo Pet Shop</h2>
+            <p>Bill details</p>
+        </div>
+        <div class="bill-info">
+            <div style="width: 500px;">
+                <p>Bill no: <input type="text" name="numInBill" id="numInBill" style="width: 200px; border: none;" readonly></p>
+                <p>Name of Customer: <input type="text" name="customerName" id="customerrName" style="width: 200px; border: none;" readonly></p>
+            </div>
+            <div style="width: 250px;">
+                <p>Date: <input type="date" name="date" id="date" style="width: 135px; border: none;" readonly></p>
+                <p>Time: <input type="time" name="time" id="time" style="width: 135px; border: none;" readonly></p>
+            </div>
+        </div>
+        <table class="bill-details">
+            <thead>
+                <tr>
+                    <th>Name of the Item</th>
+                    <th>Unit Price</th>
+                    <th>No. of the Item</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <div class="bill-summary">
+            <p>Your payable amount is: <input type="text" name="totalAmount" id="totalAmount" style="border: none;" readonly></p>
+        </div>
+        <div class="bill-footer">
+            <p>Thank You <input type="text" name="customerrName" id="customerrrName" style="border: none; font-size: 16px; width:auto; text-align: center;" readonly> for your shopping.<br>See you again!</p>
+        </div>
+    </div>
+
+    <script>
+        function generateAmount() {
+            let nameOfProduct = document.getElementById("nameOfProduct");
+            let price = document.getElementById("price");
+            let quantity = document.getElementById("quantity").value;
+            let result = document.getElementById("result");
+            let name = document.getElementById("nameOfCustomer");
+            let billNumber = document.getElementById("billNo");
+            let dateInBill = document.getElementById("dateOfBill");
+            let timeInBill = document.getElementById("timeOfBill");
+
+            document.getElementById("customerrrName").value = name.value;
+            document.getElementById("customerrName").value = name.value;
+            document.getElementById("numInBill").value = billNumber.value;
+            document.getElementById("date").value = dateInBill.value;
+            document.getElementById("time").value = timeInBill.value;
+
+            price.value = nameOfProduct.value;
+            result.value = price.value * quantity;
+        }
+
+        function generateTotalAmount() {
+            let nameOfProduct = document.getElementById("nameOfProduct");
+            let price = document.getElementById("price");
+            let quantity = document.getElementById("quantity").value;
+            let result = document.getElementById("result");
+
+            price.value = nameOfProduct.value;
+            result.value = price.value * quantity;
+
+            let tbody = document.getElementById("tbody");
+            let tr = document.createElement("tr");
+
+            let prodName = document.createElement("td");
+            prodName.innerHTML = nameOfProduct.options[nameOfProduct.selectedIndex].text;
+            tr.appendChild(prodName);
+
+            let amountcol = document.createElement("td");
+            amountcol.innerHTML = price.value;
+            tr.appendChild(amountcol);
+
+            let quantityInNo = document.createElement("td");
+            quantityInNo.innerHTML = quantity;
+            tr.appendChild(quantityInNo);
+
+            let totalAmountOfTheItem = document.createElement("td");
+            totalAmountOfTheItem.innerHTML = result.value;
+            tr.appendChild(totalAmountOfTheItem);
+
+            tbody.appendChild(tr);
+
+            let finalTotalAmount = document.getElementById("totalAmount");
+            if (finalTotalAmount.value == "") {
+                finalTotalAmount.value = 0;
+            }
+            finalTotalAmount.value = parseInt(finalTotalAmount.value) + parseInt(result.value);
+            clearAll();
+        }
+
+        function clearAll() {
+            document.getElementById("nameOfProduct").value = "";
+            document.getElementById("price").value = "";
+            document.getElementById("quantity").value = "";
+            document.getElementById("result").value = "";
+        }
+    </script>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>bingo@petsworld.com</li>
+                    <li>+1 234 567 890</li>
+                    <li>123 Pet St, Animal City, AC 12345</li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./products1.html">Shop</a></li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=T" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24.png?text=Y" alt="YouTube"></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mb-0">© 2024 Pet Products. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
