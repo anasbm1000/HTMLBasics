@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Products</title>
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    
     <style>
         .card-deck .card {
             margin-bottom: 30px;
@@ -46,10 +41,25 @@
 
         a {
             text-decoration: solid;
-            padding-left: 5px;
-            padding-right: 5px;
-            color: rgb(12, 86, 131);
+            font-size: 15px;
+            color: rgb(12, 86, 131); 
             font-weight: 600;
+        }
+        th, h3 {
+            text-align: left;
+            color: rgb(5, 63, 121);
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;            
+        }
+        
+        
+        td{
+            padding-right: 50px;
+            padding-top:20px;
+            padding-left:10px;
+            color: rgb(73, 75, 78);
+            font-weight:500;
         }
 
         .carousel-item img {
@@ -98,15 +108,54 @@
             max-width: 525px;
             margin: auto;
         }
+
+        #resultantProductDetails {
+            font-family: serif;
+            font-weight: bold;
+            font-size: large;
+            position: relative;
+            left: 0.5%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0.9, 0.9, 0.9, 0.9);
+            color: #333;
+            text-align: left;
+            margin-top: 20px;
+        }
     </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body style="background-color: rgb(55, 199, 122);">
     <div class="bg-image"> 
 
-    <a href=" ./home.html" style="font-size: 25px">Home</a>
-    <a href="./login.html" style="font-size: 25px">Login</a>
-    <a href="./registration.html" style="font-size: 25px">Signup</a>
+        <div style="margin-bottom: 20px; background: rgba(255, 255, 255, 0.5); display:block">
+            <table border="0">
+                
+                <tr style="height: 1px">
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./home.html">
+                            <h3>Home</h3>
+                        </a>
+                    </th>
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./login.html">
+                            <h3>Login</h3>
+                        </a>
+                    </th>
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./registration.html">
+                        <h3>Signup</h3>
+                        </a>
+                    </th>    
+                </tr>
+        
+            </table>
+        </div>
     <h1 style="color: rgb(41, 42, 35); font-weight: bolder; padding-top:50px; padding-left: 50px"
         class="text-left mb-4">Pet Products</h1>
 
@@ -136,12 +185,16 @@
     </div>
 
     <div class="container mt-5">
+        <div style="display: inline; ">
+            <input type="text" id="searchForProduct" onchange="searchProduct()" placeholder="Search Product" style="border: 1px solid black; background-color: rgb(255, 255, 255);">
+            <p id = "resultantProductDetails" style="font-family: serif; font-weight: bold; font-size: large; position: relative; left: 0.5%;"></p>
+        </div>
         <div class="card-deck">
             <!-- Product 1 -->
             <div class="card">
                 <img src="./images/food1.jpg" class="card-img-top" alt="Dog Toy">
                 <div class="card-body">
-                    <h5 class="card-title">PEDIGREE Adult Food</h5>
+                    <h5 class="card-title" id="pedigree">PEDIGREE Adult Food</h5>
                     <p class="card-text">2.8 kg Dry Adult Dog Food</p>
                     <p class="card-text">Contains Chicken And Rice </p>
                     <p class="card-text">Shelf Life - 18 months</p>
@@ -157,7 +210,7 @@
             <div class="card">
                 <img src="./images/food2.jpg" class="card-img-top" alt="Cat Food">
                 <div class="card-body">
-                    <h5 class="card-title">HIMALAYA Dog Food</h5>
+                    <h5 class="card-title" id="himalaya">HIMALAYA Dog Food</h5>
                     <p class="card-text">3kg Dry dog food </p>
                     <p class="card-text">Chicken and rice for new born dogs</p>
                     <p class="card-text">Shelf Life - 12 months</p>
@@ -173,7 +226,7 @@
             <div class="card">
                 <img src="./images/food3.jpg" class="card-img-top" alt="Bird Cage">
                 <div class="card-body">
-                    <h5 class="card-title">WHISKAS Kitten Food</h5>
+                    <h5 class="card-title" id="whiskas">WHISKAS Kitten Food</h5>
                     <p class="card-text">(2-12 months) Dry Cat Food</p>
                     <p class="card-text">Ocean Fish, nutrient rich, Minerals</p>
                     <p class="card-text">No artificial preservatives</p>
@@ -192,7 +245,7 @@
             <div class="card">
                 <img src="./images/food4.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">KAYTEE Wild Bird Food</h5>
+                    <h5 class="card-title" id="kaytee">KAYTEE Wild Bird Food</h5>
                     <p class="card-text">Applicable to all life stages</p>
                     <p class="card-text">Grains, Sunflower seeds, Vitamin A,D </p>
                     <p class="card-text">5 pounds/ 2365.88 ml</p>
@@ -208,7 +261,7 @@
             <div class="card">
                 <img src="./images/birdcage1.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">CC ENTERPRISES Bird Cage</h5>
+                    <h5 class="card-title" id="ccenter">CC ENTERPRISES Bird Cage</h5>
                     <p class="card-text">Best for Lovebird/Pet, Parrot</p>
                     <p class="card-text"> High quality metal. Coated with spray powder paint</p>
                     <p class="card-text"> Easy to Hang</p>
@@ -224,7 +277,7 @@
             <div class="card">
                 <img src="./images/birdcage2.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">Hanging Birdcage</h5>
+                    <h5 class="card-title" id="birdcage">Hanging Birdcage</h5>
                     <p class="card-text">Large Space[Parrot, Myna], Portable Cage </p>
                     <p class="card-text"> Easy to assemble,clean. Durable.</p>
                     <p class="card-text"> Easy to clean up manure</p>
@@ -243,7 +296,7 @@
             <div class="card">
                 <img src="./images/fishtank1.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">PONDON Fish Tank</h5>
+                    <h5 class="card-title" id="pondon">PONDON Fish Tank</h5>
                     <p class="card-text">Black glass aquarium with a space of 1.7 Gallon.</p>
                     <p class="card-text">Rectangular shape with filter</p>
                     <p class="card-text">Provides quick and stylish foundation</p>
@@ -259,7 +312,7 @@
             <div class="card">
                 <img src="./images/fishtank2.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">Bubble Fish Aquarium </h5>
+                    <h5 class="card-title" id="bubblefish">Bubble Fish Aquarium </h5>
                     <p class="card-text">Deluxe Acrylic Wall Mounted</p>
                     <p class="card-text">Includes a predrilled aquarium. <del>Pump, filtration</del></p>
                     <p class="card-text">Can be hung virtually anywhere. </p>
@@ -275,7 +328,7 @@
             <div class="card">
                 <img src="./images/dogleashandcollar.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">SENAPATI Dog Collar & Leash</h5>
+                    <h5 class="card-title" id="dogleash">SENAPATI Dog Collar & Leash</h5>
                     <p class="card-text">Large, Green, Nylon Material</p>
                     <p class="card-text">Reversible and Retractable</p>
                     <p class="card-text">Standard Harness Type that can be used everyday</p>
@@ -293,7 +346,7 @@
             <div class="card">
                 <img src="./images/catlitterbox.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">MOVSON Litter Box</h5>
+                    <h5 class="card-title" id="movson">MOVSON Litter Box</h5>
                     <p class="card-text">Plastic material, round in shape</p>
                     <p class="card-text">Available colors - Pink, White</p>
                     <p class="card-text">Dimensions : 5.11 x 5.11 x 5.11</p>
@@ -309,7 +362,7 @@
             <div class="card">
                 <img src="./images/dogchewstick.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">Dog Chew Stick</h5>
+                    <h5 class="card-title" id="movson">Dog Chew Stick</h5>
                     <p class="card-text">450g Rawhide Munchy Sticks</p>
                     <p class="card-text">Flavours - Chicken, Liver, Milk, Mint</p>
                     <p class="card-text">Used For Healthy breathe, teeth & gums</p>
@@ -325,7 +378,7 @@
             <div class="card">
                 <img src="./images/petshampoo.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">HIMALAYA Shampoo </h5>
+                    <h5 class="card-title" id="shampoo">HIMALAYA Shampoo </h5>
                     <p class="card-text">Ayurvedic proprietary medicine</p>
                     <p class="card-text">For Dogs prevents from fleas, ticks, itching</p>
                     <p class="card-text">Suitable for all dog breeds</p>
@@ -343,7 +396,7 @@
             <div class="card">
                 <img src="./images/petshampoo1.jpg" class="card-img-top" alt="Fish Tank">
                 <div class="card-body">
-                    <h5 class="card-title">CAREDOM Shampoo and Conditioner</h5>
+                    <h5 class="card-title" id="caredom">CAREDOM Shampoo and Conditioner</h5>
                     <p class="card-text">Herbal Pet, Vita Pet, Mint Pet, Pro Pet 
                         Dogs Shampoo</p>
                     <p class="card-text">Packed with organic conditioners</p>
@@ -360,7 +413,7 @@
             <div class="card">
                 <img src="./images/petconditioner.jpg" class="card-img-top" alt="Hamster Wheel">
                 <div class="card-body">
-                    <h5 class="card-title">THE PET MOM Dog Shampoo</h5>
+                    <h5 class="card-title" id="thepetmom">THE PET MOM Dog Shampoo</h5>
                     <p class="card-text">Strengthen, Shine, Condition, Control Hair Fall</p>
                     <p class="card-text">Keratin & Protein is curated to strengthen fur</p>
                     <p class="card-text">Enriched with milk protein and soybean oil</p>
@@ -376,7 +429,7 @@
             <div class="card">
                 <img src="./images/birdfeeder.jpg" class="card-img-top" alt="Rabbit Hutch">
                 <div class="card-body">
-                    <h5 class="card-title">TRUSTBASKET Bird Feeder</h5>
+                    <h5 class="card-title" id="trustbasket">TRUSTBASKET Bird Feeder</h5>
                     <p class="card-text">Heavy steel mesh with rust-resistant black powder</p>
                     <p class="card-text">Dimensions	- 18L x 8.8W x 21.5H</p>
                     <p class="card-text">Garden, Balcony, Home, Indoor and Outdoor (Black)</p>
@@ -390,6 +443,44 @@
             </div>
         </div>
     </div>
+    <script>
+        function searchProduct() {
+            var productName = document.getElementById("searchForProduct");
+            var resultantProductDetails = document.getElementById("resultantProductDetails");
+
+            productName = productName.value;
+            productName = productName.toLowerCase();
+            function productDetails(name, property1, property2, price, exclusive) {
+                this.name = name;
+                this.property1 = property1;
+                this.property2 = property2;
+                this.price = price;
+                this.exclusive = exclusive;
+            }
+    
+            const pedigree = new productDetails("PEDIGREE Adult Food", "2.8 kg Dry Adult Dog Food", "Contains Chicken And Rice", 695, "Hurry, Only 1 left!");
+            const himalaya = new productDetails("HIMALAYA Dog Food", "3kg Dry dog food", "Chicken and rice for new born dogs", 770, "Hurry, Only 2 left!");
+            const whiskas= new productDetails("WHISKAS Kitten Food", "(2-12 months) Dry Cat Food", "Ocean Fish, nutrient rich, Minerals", 451, "Get 10% off on first order");
+
+            if (productName == "pedigree") {
+                resultantProductDetails.innerHTML = "Product name is "+ pedigree.name + "<br> Product property1 is " + pedigree.property1 + "<br> property2 is " 
+                + pedigree.property2 + "<br> Price of the product is " + pedigree.price + "<br> IMPORTANT!!! " + pedigree.exclusive;
+            }
+            else if (productName == "himalaya") {
+                resultantProductDetails.innerHTML = "Product name is "+ himalaya.name + "<br> Product property1 is " + himalaya.property1 + "<br> property2 is "
+                + himalaya.property2 + "<br> Price of the product is " + himalaya.price + "<br> IMPORTANT!!! " + himalaya.exclusive;
+            }
+            else if (productName == "whiskas") {
+                resultantProductDetails.innerHTML = "Product name is "+ whiskas.name + "<br> Product property1 is " + whiskas.property1 + "<br> property2 is "
+                + whiskas.property2 + "<br> Price of the product is " + whiskas.price + "<br> IMPORTANT!!! " + whiskas.exclusive;
+            }
+            else {
+                resultantProductDetails.innerHTML = "Product not found";
+            }
+
+            
+        }
+    </script>
 
 </body>
 <footer class="footer mt-5">
