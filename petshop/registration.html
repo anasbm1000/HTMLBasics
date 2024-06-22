@@ -23,19 +23,21 @@
         .content p:hover{
             color: grey;
         }
-        th {
-            text-align: left;
-            color: rgb(73, 75, 78);
-            font-family:monospace;
-            font-size: 17px;
-            font-weight:900;
-            padding-top:20px;
-        }
         a {
             text-decoration: solid;
-             color: rgb(12, 86, 131); 
+            font-size: 15px;
+            color: rgb(12, 86, 131); 
             font-weight: 600;
         }
+        th, h3 {
+            text-align: left;
+            color: rgb(5, 63, 121);
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;            
+        }
+        
+        
         td{
             padding-right: 50px;
             padding-top:20px;
@@ -103,10 +105,28 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </head>
-<body style="background-color: rgb(55, 199, 122);">
+<body>
     <div class="bg-image"> 
-        <a href="./home.html" style="font-size: 25px; 
-    padding: 5px; text-decoration: none;">Home</a>
+        <div style="margin-bottom: 20px; background: rgba(255, 255, 255, 0.5); display:block">
+            <table border="0">
+                
+                <tr style="height: 1px">
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./home.html">
+                            <h3>Home</h3>
+                        </a>
+                    </th>
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./login.html">
+                            <h3>Login</h3>
+                        </a>
+                    </th>
+                    <th><a class="ink-info link-offset-2 link-underline link-underline-opacity-0" href="./products1.html">
+                        <h3>Products</h3>
+                        </a>
+                    </th>    
+                </tr>
+        
+            </table>
+        </div>
         <div class="content">
     
     <center>
@@ -126,7 +146,7 @@
         </div>    
     <center>    
     <div class="registrationform">
-        <form action="" method="post" style="background-color: rgba(250, 246, 246, 0.7); text-align:left; padding: 20px; border-radius: 8px;">
+        <form action="" method="post" style="background-color: rgba(250, 246, 246, 0.6); text-align:left; padding: 20px; border-radius: 8px;">
             <table>
                 <tr>
                     <th>First Name</th>
