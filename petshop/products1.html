@@ -461,18 +461,80 @@
             const pedigree = new productDetails("PEDIGREE Adult Food", "2.8 kg Dry Adult Dog Food", "Contains Chicken And Rice", 695, "Hurry, Only 1 left!");
             const himalaya = new productDetails("HIMALAYA Dog Food", "3kg Dry dog food", "Chicken and rice for new born dogs", 770, "Hurry, Only 2 left!");
             const whiskas= new productDetails("WHISKAS Kitten Food", "(2-12 months) Dry Cat Food", "Ocean Fish, nutrient rich, Minerals", 451, "Get 10% off on first order");
+            const kaytee = new productDetails("KAYTEE Wild Bird Food", "5 pounds/ 2365.88 ml", "Grains, Sunflower seeds, Vitamin A,D", 4446, "Get 40% off for booking within 5hrs");
+            const cc = new productDetails("CC ENTERPRISES Bird Cage", "Best for Lovebird/Pet, Parrot", "High quality metal. Coated with spray powder paint", 1289, "Get upto 60% off by ordering now");
+            const birdcage = new productDetails("Hanging Birdcage", "Large Space[Parrot, Myna], Portable Cage", "Easy to assemble,clean. Durable.", 3768, "Hurry, Only 1 left!");
+            const fishtank = new productDetails("PONDON Fish Tank", "Black glass aquarium with a space of 1.7 Gallon.", "Rectangular shape with filter", 11680, "Hurry, last one is left!");
+            const fishaquarium = new productDetails("Bubble Fish Aquarium", "Deluxe Acrylic Wall Mounted", "Includes a predrilled aquarium.", 3614, "Get upto 20% off by ordering now");
+            const senapati = new productDetails("SENAPATI Dog Collar & Leash", "Large, Green, Nylon Material", "Reversible and Retractable", 124, "5 available!!");
+            const movson = new productDetails("MOVSON Litter Box", "Round in shape", "Plastic material", 441, "Be the first customer");
+            const dogchew = new productDetails("Dog Chew Stick", "450g Rawhide Munchy Sticks", "Flavours - Chicken, Liver, Milk, Mint", 152, "Get upto 20% off by ordering now");
+            const hshampoo = new productDetails("Himalaya Shampoo", "Ayurvedic proprietary medicine", "For Dogs prevents from fleas, ticks, itching", 495, "Get Pack of 2 at Rs. 500");
+            const caredom = new productDetails("CAREDOM Shampoo and Conditioner", "Herbal Pet, Vita Pet, Mint Pet, Pro Pet Dogs Shampoo", "Packed with organic conditioners", 889, "Get Pack of 2 at Rs. 1299");
+            const petmom = new productDetails("THE PET MOM Dog Shampoo", "Strengthen, Shine, Condition, Control Hair Fall", "Keratin & Protein is curated to strengthen fur", 499, "Get Pack of 2 at Rs. 999");
+            const trustbasket = new productDetails("TRUSTBASKET Bird Feeder", "Heavy steel mesh with rust-resistant black powder", "Garden, Balcony, Home, Indoor and Outdoor (Black)", 249, "Be the first to know");
+            
+
 
             if (productName == "pedigree") {
-                resultantProductDetails.innerHTML = "Product name is "+ pedigree.name + "<br> Product property1 is " + pedigree.property1 + "<br> property2 is " 
+                resultantProductDetails.innerHTML = "Product name is "+ pedigree.name + "<br> " + pedigree.property1 + "<br> " 
                 + pedigree.property2 + "<br> Price of the product is " + pedigree.price + "<br> IMPORTANT!!! " + pedigree.exclusive;
             }
             else if (productName == "himalaya") {
-                resultantProductDetails.innerHTML = "Product name is "+ himalaya.name + "<br> Product property1 is " + himalaya.property1 + "<br> property2 is "
+                resultantProductDetails.innerHTML = "Product name is "+ himalaya.name + "<br> " + himalaya.property1 + "<br> " 
                 + himalaya.property2 + "<br> Price of the product is " + himalaya.price + "<br> IMPORTANT!!! " + himalaya.exclusive;
             }
             else if (productName == "whiskas") {
-                resultantProductDetails.innerHTML = "Product name is "+ whiskas.name + "<br> Product property1 is " + whiskas.property1 + "<br> property2 is "
+                resultantProductDetails.innerHTML = "Product name is "+ whiskas.name + "<br> " + whiskas.property1 + "<br> " 
                 + whiskas.property2 + "<br> Price of the product is " + whiskas.price + "<br> IMPORTANT!!! " + whiskas.exclusive;
+            }
+            else if (productName == "kaytee") {
+                resultantProductDetails.innerHTML = "Product name is "+ kaytee.name + "<br> " + kaytee.property1 + "<br> " 
+                + kaytee.property2 + "<br> Price of the product is " + kaytee.price + "<br> IMPORTANT!!! " + kaytee.exclusive;
+            }
+            else if (productName == "cc") {
+                resultantProductDetails.innerHTML = "Product name is "+ cc.name + "<br> " + cc.property1 + "<br> " 
+                + cc.property2 + "<br> Price of the product is " + cc.price + "<br> IMPORTANT!!! " + cc.exclusive;
+            }
+            else if (productName == "birdcage") {
+                resultantProductDetails.innerHTML = "Product name is "+ birdcage.name + "<br> " + birdcage.property1 + "<br> " 
+                + birdcage.property2 + "<br> Price of the product is " + birdcage.price + "<br> IMPORTANT!!! " + birdcage.exclusive;
+            }
+            else if (productName == "fishtank") {
+                resultantProductDetails.innerHTML = "Product name is "+ fishtank.name + "<br> " + fishtank.property1 + "<br> " 
+                + fishtank.property2 + "<br> Price of the product is " + fishtank.price + "<br> IMPORTANT!!! " + fishtank.exclusive;
+            }   
+            else if (productName == "fishaquarium") {
+                resultantProductDetails.innerHTML = "Product name is "+ fishaquarium.name + "<br> " + fishaquarium.property1 + "<br> " 
+                + fishaquarium.property2 + "<br> Price of the product is " + fishaquarium.price + "<br> IMPORTANT!!! " + fishaquarium.exclusive;
+            }
+            else if (productName == "senapati") {
+                resultantProductDetails.innerHTML = "Product name is "+ senapati.name + "<br> " + senapati.property1 + "<br> " 
+                + senapati.property2 + "<br> Price of the product is " + senapati.price + "<br> IMPORTANT!!! " + senapati.exclusive;
+            }
+            else if (productName == "movson") {
+                resultantProductDetails.innerHTML = "Product name is "+ movson.name + "<br> " + movson.property1 + "<br> " 
+                + movson.property2 + "<br> Price of the product is " + movson.price + "<br> IMPORTANT!!! " + movson.exclusive;
+            }
+            else if (productName == "dogchew") {
+                resultantProductDetails.innerHTML = "Product name is "+ dogchew.name + "<br> " + dogchew.property1 + "<br> " 
+                + dogchew.property2 + "<br> Price of the product is " + dogchew.price + "<br> IMPORTANT!!! " + dogchew.exclusive;
+            }
+            else if (productName == "hshampoo") {
+                resultantProductDetails.innerHTML = "Product name is "+ hshampoo.name + "<br> " + hshampoo.property1 + "<br> " 
+                + hshampoo.property2 + "<br> Price of the product is " + hshampoo.price + "<br> IMPORTANT!!! " + hshampoo.exclusive;
+            }
+            else if (productName == "caredom") {
+                resultantProductDetails.innerHTML = "Product name is "+ caredom.name + "<br> " + caredom.property1 + "<br> " 
+                + caredom.property2 + "<br> Price of the product is " + caredom.price + "<br> IMPORTANT!!! " + caredom.exclusive;
+            }
+            else if (productName == "petmom") {
+                resultantProductDetails.innerHTML = "Product name is "+ petmom.name + "<br> " + petmom.property1 + "<br> " 
+                + petmom.property2 + "<br> Price of the product is " + petmom.price + "<br> IMPORTANT!!! " + petmom.exclusive;
+            }
+            else if (productName == "trustbasket") {
+                resultantProductDetails.innerHTML = "Product name is "+ trustbasket.name + "<br> " + trustbasket.property1 + "<br> " 
+                + trustbasket.property2 + "<br> Price of the product is " + trustbasket.price + "<br> IMPORTANT!!! " + trustbasket.exclusive;
             }
             else {
                 resultantProductDetails.innerHTML = "Product not found";
